@@ -1,0 +1,283 @@
+INFO - 2023-12-08 00:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 00:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-08 00:58:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'mysql', 'psb-online', 3306, '', 0)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-08 00:58:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\SKRIPSI_PSB_ONLINE\\public\\index.php')
+ERROR - 2023-12-08 01:03:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'mysql', 'psb-online', 3306, '', 0)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-08 01:03:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\SKRIPSI_PSB_ONLINE\\public\\index.php')
+INFO - 2023-12-08 01:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 01:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 01:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 01:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 01:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 01:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 01:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 01:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-08 01:04:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'mysql', 'psb-online', 3306, '', 0)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-08 01:04:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\SKRIPSI_PSB_ONLINE\\public\\index.php')
+ERROR - 2023-12-08 01:05:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'mysql', 'psb-online', 3306, '', 0)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-08 01:05:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('admin@gmail.com', '1234')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\SKRIPSI_PSB_ONLINE\\public\\index.php')
+INFO - 2023-12-08 01:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 01:05:17 --> Call to undefined function form_open()
+in APPPATH\Views\v_login-user.php on line 44.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('v_login-user', [], true)
+ 4 APPPATH\Controllers\Auth.php(21): view('v_login-user')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\SKRIPSI_PSB_ONLINE\\public\\index.php')
+INFO - 2023-12-08 01:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 01:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 01:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-08 01:05:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'mysql', 'psb-online', 3306, '', 0)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('sdjdhdbw@gmail....', 'weee')
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('sdjdhdbw@gmail....', 'weee')
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-08 01:05:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('sdjdhdbw@gmail.com', 'weee')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\SKRIPSI_PSB_ONLINE\\public\\index.php')
+ERROR - 2023-12-08 01:08:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'mysql', 'psb-online', 3306, '', 0)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('sdjdhdbw@gmail....', 'weee')
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\app\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('sdjdhdbw@gmail....', 'weee')
+#5 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+#6 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SKRIPSI_PSB_ONLINE\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-12-08 01:08:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(46): App\Models\ModelAuth->login_user('sdjdhdbw@gmail.com', 'weee')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->cek_login_user()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\SKRIPSI_PSB_ONLINE\\public\\index.php')
